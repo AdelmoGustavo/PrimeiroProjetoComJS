@@ -24,28 +24,28 @@ function convertValues() {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
-        }).format(inputNumberValue / realToday)
+        }).format(inputNumberValue)
     }
 
     if (currencySelectFrom.value == "dolar") { // Se for dolar é aqui
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
-        }).format(inputNumberValue / dolarToday)
+        }).format(inputNumberValue)
     }
 
     if (currencySelectFrom.value == "euro") { // Se for em euro é aqui
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
-        }).format(inputNumberValue / euroToday)
+        }).format(inputNumberValue)
     }
 
     if (currencySelectFrom.value == "libra") { // Se for em libra é aqui
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("uk-UK", {
             style: "currency",
             currency: "GBP"
-        }).format(inputNumberValue / libraToday)
+        }).format(inputNumberValue)
     }
 
     // Separando o código
