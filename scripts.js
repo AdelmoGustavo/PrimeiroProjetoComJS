@@ -118,7 +118,7 @@ function changeCurrency() {
 }
 
 function changeCurrencyFrom() {
-    const currencyName = document.getElementById("currency-name")
+    const currencyName = document.getElementById("currency-name-one")
     const currencyImage = document.querySelector(".currency-img-second")
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert")
 
@@ -147,7 +147,7 @@ function changeCurrencyFrom() {
     }
 
     if (currencySelectFrom.value == "libra") {
-        currencyName.innerHTML = "Libra Esterlina"
+        currencyName.innerHTML = "Libra"
         currencyImage.src = "./assets/libra.png"
         currencyValueToConvert.textContent = "£ 0.00"
     }
